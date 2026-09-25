@@ -1,0 +1,92 @@
+[
+  {
+    "id": "manikarnika",
+    "name": "Manikarnika Boutique Resort",
+    "brand": "Vilstay",
+    "location": "Manjeri, Kerala",
+    "category": "Heritage Boutique Resort",
+    "description": "Laterite walls, a quiet courtyard, and the timeless warmth of a Kerala home.",
+    "facilities": [
+      "Free Wi-Fi",
+      "Air conditioning",
+      "Family rooms"
+    ],
+    "image": "https://d2gx18f76jq9dw.cloudfront.net/60840/01KKNTV0JSKSQNBFNCBQYB2ZWA.avif",
+    "imageSource": "https://vilstay.com/"
+  },
+  {
+    "id": "panthalaza",
+    "name": "Panthalaza Lakefront Heritage Resort",
+    "brand": "Vilstay",
+    "location": "Narinada, Kerala",
+    "category": "Lakefront Heritage Resort",
+    "description": "Slow mornings by the water. Heritage character, with room to simply be.",
+    "facilities": [
+      "Free Wi-Fi",
+      "Parking",
+      "Room service"
+    ],
+    "image": "https://d2gx18f76jq9dw.cloudfront.net/88563/01KTZVAB61NE9DAW779G2P2AVS.png",
+    "imageSource": "https://vilstay.com/"
+  },
+  {
+    "id": "malabar",
+    "name": "Malabar Comforts Alappuzha",
+    "brand": "Vilstay",
+    "location": "Alappuzha, Kerala",
+    "category": "Comfortable City Stay",
+    "description": "An easy, comfortable base for discovering the everyday charm of Alappuzha.",
+    "facilities": [
+      "Free Wi-Fi",
+      "Parking",
+      "Tea & coffee"
+    ],
+    "image": "https://d2gx18f76jq9dw.cloudfront.net/102713/01KXZMMSMVQRJQGSVYZTC55WDT.png",
+    "imageSource": "https://vilstay.com/"
+  },
+  {
+    "id": "kalani-vythiri",
+    "name": "Kalani Boutique Stay Vythiri",
+    "brand": "Vilstay",
+    "location": "Vythiri, Wayanad",
+    "category": "Boutique Mountain Stay",
+    "description": "Wake to green hills and spend a little longer in the stillness of Wayanad.",
+    "facilities": [
+      "Free Wi-Fi",
+      "Room service",
+      "Family-friendly"
+    ],
+    "image": "https://d2gx18f76jq9dw.cloudfront.net/102717/01KXZN3YAFCHCF7YG7SQVTW7ZD.jpeg",
+    "imageSource": "https://vilstay.com/"
+  },
+  {
+    "id": "hill-view",
+    "name": "Hill View Residency",
+    "brand": "Vilstay",
+    "location": "Kerala",
+    "category": "Hill View Stay",
+    "description": "A welcoming place to pause, recharge, and make yourself at home.",
+    "facilities": [
+      "Free Wi-Fi",
+      "Parking",
+      "24-hour front desk"
+    ],
+    "image": "https://d2gx18f76jq9dw.cloudfront.net/116147/01M13CMRANN15QF8FM8JZNPDXG.png",
+    "imageSource": "https://vilstay.com/"
+  },
+  {
+    "id": "edakkal-village",
+    "name": "Edakkal Village Resort",
+    "brand": "Vilstay",
+    "location": "Ambukuthy, Sultan Bathery, Wayanad",
+    "category": "Resort Stay",
+    "description": "A nature retreat near Edakkal Caves, surrounded by greenery and scenic views.",
+    "facilities": [
+      "Caretaker support",
+      "Dining area",
+      "Outdoor seating"
+    ],
+    "image": "https://www.hireacamp.com/api/external/image?name=uploads/df1ada6453744085916a16e3ec4a8e9c.jpeg&size=1200x900&q=80",
+    "imageSource": "https://vilstay.boltlabs.app/"
+  }
+]

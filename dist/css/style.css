@@ -1,0 +1,94 @@
+/* Vilstay Luxury Hospitality Design System */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-terracotta: #b1493e;
+  --color-terracotta-dark: #8e342b;
+  --color-cream: #faf8f5;
+  --color-sand: #f4ede4;
+  --color-linen: #fff9df;
+  --color-charcoal: #1f1918;
+  --color-gold: #c98a3c;
+  --color-border: #e7e0d8;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+::selection {
+  background-color: var(--color-terracotta);
+  color: #ffffff;
+}
+
+/* Custom understated scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f4ede4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4a59a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-terracotta);
+}
+
+/* Hide scrollbar for category tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe area for mobile devices */
+.safe-bottom {
+  padding-bottom: max(0.85rem, env(safe-area-inset-bottom));
+}
+
+/* Micro-interactions */
+.btn-press:active {
+  transform: scale(0.97);
+  transition: transform 0.12s ease;
+}
+
+/* Luxury card hover */
+.card-hover {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(31, 25, 24, 0.08);
+}
+
+/* Line clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Form input focus styles */
+input, select, textarea {
+  font-size: 16px !important; /* Prevents auto-zoom on mobile browsers */
+}
