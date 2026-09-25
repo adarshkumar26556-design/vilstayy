@@ -1,4 +1,57 @@
+/* ── Hero Slider ─────────────────────────────────────────── */
+(function () {
+  const slider  = document.getElementById('hero-slider');
+  if (!slider) return;
+
+  const slides  = Array.from(slider.querySelectorAll('.hero-slide'));
+  const dots    = Array.from(slider.querySelectorAll('.slider-dot'));
+  const prevBtn = document.getElementById('slider-prev');
+  const nextBtn = document.getElementById('slider-next');
+  let current   = 0;
+  let timer     = null;
+  const DELAY   = 5500;
+
+  function goTo(n) {
+    const prev = current;
+    current = (n + slides.length) % slides.length;
+
+    slides[prev].classList.add('opacity-0');
+    slides[prev].setAttribute('aria-hidden', 'true');
+    slides[current].classList.remove('opacity-0');
+    slides[current].setAttribute('aria-hidden', 'false');
+
+    dots.forEach((d, i) => {
+      const active = i === current;
+      d.setAttribute('aria-selected', String(active));
+      d.classList.toggle('bg-white/15', active);
+      d.classList.toggle('border-white/25', active);
+      d.classList.toggle('bg-white/10', !active);
+      d.classList.toggle('border-white/15', !active);
+      const dot = d.querySelector('.dot-indicator');
+      const label = d.querySelector('span:last-child');
+      if (dot) { dot.classList.toggle('bg-white', active); dot.classList.toggle('bg-white/50', !active); }
+      if (label) { label.classList.toggle('text-white', active); label.classList.toggle('text-white/70', !active); }
+    });
+  }
+
+  function startAuto() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), DELAY);
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => { goTo(current - 1); startAuto(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { goTo(current + 1); startAuto(); });
+  dots.forEach(d => d.addEventListener('click', () => { goTo(Number(d.dataset.target)); startAuto(); }));
+
+  slider.addEventListener('mouseenter', () => clearInterval(timer));
+  slider.addEventListener('mouseleave', startAuto);
+
+  startAuto();
+})();
+/* ── End Hero Slider ─────────────────────────────────────── */
+
 'use strict';
+
 const params = new URLSearchParams(location.search);
 const navbar = document.querySelector('#navbar');
 const menuButton = document.querySelector('#menu-button');

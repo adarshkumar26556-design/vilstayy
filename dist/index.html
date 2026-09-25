@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Vilstay | Kerala Stays</title>
-  <meta name="description" content="Discover six distinctive Vilstay properties across Kerala. Boutique resorts, heritage stays and comfortable escapes.">
+  <title>Vilstay | Resorts, City Stays &amp; Venues in Kerala</title>
+  <meta name="description" content="Vilstay — premium resorts &amp; leisure stays, convenient town &amp; city hotels, and intimate wedding venues across Kerala. Three ways to stay, travel and celebrate.">
   <meta name="theme-color" content="#b1493e">
   <link rel="icon" type="image/jpeg" href="images/vilstay-logo.jpg">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23b1493e'/%3E%3Ctext x='16' y='22' fill='%23fff9df' font-family='system-ui, sans-serif' font-weight='bold' font-size='18' text-anchor='middle'%3Ev%3C/text%3E%3C/svg%3E">
@@ -47,12 +47,64 @@
         <img src="images/vilstay-logo.jpg" alt="Vilstay Logo" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover shadow-sm ring-2 ring-white/30 group-hover:scale-105 transition">
         <span class="text-2xl sm:text-3xl tracking-tight font-semibold">vilstay<span class="text-gold">.</span></span>
       </a>
-      <nav aria-label="Main navigation" class="hidden lg:flex gap-8 text-sm">
-        <a class="hover:text-gold transition font-medium" href="index.html">Home</a>
-        <a class="hover:text-gold transition font-medium" href="properties.html">Properties</a>
-        <a class="hover:text-gold transition font-medium" href="index.html#experiences">Experiences</a>
-        <a class="hover:text-gold transition font-medium" href="about.html">About</a>
-        <a class="hover:text-gold transition font-medium" href="contact.html">Contact</a>
+      <nav aria-label="Main navigation" class="hidden lg:flex items-center gap-1 text-sm">
+        <a class="hover:text-gold transition font-medium px-3 py-2" href="index.html">Home</a>
+        <!-- Vilstay dropdown -->
+        <div class="relative group/nav">
+          <button class="flex items-center gap-1 hover:text-gold transition font-medium px-3 py-2" aria-haspopup="true">
+            Vilstay
+            <svg class="w-3.5 h-3.5 opacity-60 group-hover/nav:rotate-180 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 z-50">
+            <div class="bg-white text-charcoal rounded-2xl shadow-2xl border border-stone-100 overflow-hidden w-52 py-2">
+              <div class="px-4 py-2 border-b border-stone-100">
+                <p class="text-[10px] font-bold uppercase tracking-[.18em] text-forest">Vilstay</p>
+                <p class="text-[11px] text-stone-500 mt-0.5">Relax, escape &amp; experience</p>
+              </div>
+              <a href="properties.html" class="flex items-center gap-2 px-4 py-2.5 hover:bg-sand text-sm font-medium transition">🏨 Resorts</a>
+              <a href="properties.html" class="flex items-center gap-2 px-4 py-2.5 hover:bg-sand text-sm font-medium transition">🌿 Villas</a>
+              <a href="properties.html" class="flex items-center gap-2 px-4 py-2.5 hover:bg-sand text-sm font-medium transition">✨ Premium Stays</a>
+            </div>
+          </div>
+        </div>
+        <!-- Vilstay Go dropdown -->
+        <div class="relative group/go">
+          <button class="flex items-center gap-1 hover:text-gold transition font-medium px-3 py-2" aria-haspopup="true">
+            Vilstay Go
+            <svg class="w-3.5 h-3.5 opacity-60 group-hover/go:rotate-180 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover/go:opacity-100 group-hover/go:visible transition-all duration-200 z-50">
+            <div class="bg-white text-charcoal rounded-2xl shadow-2xl border border-stone-100 overflow-hidden w-52 py-2">
+              <div class="px-4 py-2 border-b border-stone-100">
+                <p class="text-[10px] font-bold uppercase tracking-[.18em] text-gold">Vilstay Go</p>
+                <p class="text-[11px] text-stone-500 mt-0.5">Comfortable &amp; convenient</p>
+              </div>
+              <a href="properties.html" class="flex items-center gap-2 px-4 py-2.5 hover:bg-sand text-sm font-medium transition">🏙️ Town Hotels</a>
+              <a href="properties.html" class="flex items-center gap-2 px-4 py-2.5 hover:bg-sand text-sm font-medium transition">🌆 City Stays</a>
+              <a href="properties.html" class="flex items-center gap-2 px-4 py-2.5 hover:bg-sand text-sm font-medium transition">💼 Business Stays</a>
+            </div>
+          </div>
+        </div>
+        <!-- Vilstay Venue dropdown -->
+        <div class="relative group/venue">
+          <button class="flex items-center gap-1 hover:text-gold transition font-medium px-3 py-2" aria-haspopup="true">
+            Vilstay Venue
+            <svg class="w-3.5 h-3.5 opacity-60 group-hover/venue:rotate-180 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover/venue:opacity-100 group-hover/venue:visible transition-all duration-200 z-50">
+            <div class="bg-white text-charcoal rounded-2xl shadow-2xl border border-stone-100 overflow-hidden w-52 py-2">
+              <div class="px-4 py-2 border-b border-stone-100">
+                <p class="text-[10px] font-bold uppercase tracking-[.18em] text-[#a0522d]">Vilstay Venue</p>
+                <p class="text-[11px] text-stone-500 mt-0.5">Spaces for special moments</p>
+              </div>
+              <a href="contact.html" class="flex items-center gap-2 px-4 py-2.5 hover:bg-sand text-sm font-medium transition">💍 Weddings</a>
+              <a href="contact.html" class="flex items-center gap-2 px-4 py-2.5 hover:bg-sand text-sm font-medium transition">🎉 Events</a>
+              <a href="contact.html" class="flex items-center gap-2 px-4 py-2.5 hover:bg-sand text-sm font-medium transition">🥂 Private Celebrations</a>
+            </div>
+          </div>
+        </div>
+        <a class="hover:text-gold transition font-medium px-3 py-2" href="about.html">About</a>
+        <a class="hover:text-gold transition font-medium px-3 py-2" href="contact.html">Contact</a>
       </nav>
       <a href="properties.html#search" class="hidden sm:inline-flex rounded-full border border-current px-6 py-2.5 text-sm hover:bg-forest hover:border-forest hover:text-white transition font-medium">Book Your Stay <span aria-hidden="true">↗</span></a>
       <button id="menu-button" class="lg:hidden w-10 h-10 rounded-full flex items-center justify-center bg-black/25 backdrop-blur-md text-white transition active:scale-95" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
@@ -80,7 +132,7 @@
           <span class="text-[10px] font-bold uppercase tracking-[.18em] text-stone-400">Menu</span>
         </div>
 
-        <!-- Nav Links with Icons -->
+        <!-- Nav Links with Brand Categories -->
         <nav class="px-4 flex flex-col gap-1">
           <a href="index.html" class="flex items-center gap-3.5 px-3 py-3 rounded-xl bg-[#2b2321] text-white font-semibold transition active:scale-[0.98]">
             <span class="w-8 h-8 rounded-lg bg-white/15 flex items-center justify-center shrink-0">
@@ -88,30 +140,39 @@
             </span>
             <span class="text-[15px]">Home</span>
           </a>
-          <a href="properties.html" class="flex items-center gap-3.5 px-3 py-3 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98]">
-            <span class="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center shrink-0">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-stone-600"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 0-4 0v2"/></svg>
-            </span>
-            <span class="text-[15px]">Properties</span>
-          </a>
-          <a href="index.html#experiences" class="flex items-center gap-3.5 px-3 py-3 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98]">
-            <span class="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center shrink-0">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-stone-600"><path d="M12 2a9 9 0 0 1 9 9c0 4.56-6.84 10.62-8.44 11.92a.9.9 0 0 1-1.12 0C9.84 21.62 3 15.56 3 11a9 9 0 0 1 9-9z"/><circle cx="12" cy="11" r="3"/></svg>
-            </span>
-            <span class="text-[15px]">Experiences</span>
-          </a>
-          <a href="about.html" class="flex items-center gap-3.5 px-3 py-3 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98]">
-            <span class="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center shrink-0">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-stone-600"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            </span>
-            <span class="text-[15px]">About</span>
-          </a>
-          <a href="contact.html" class="flex items-center gap-3.5 px-3 py-3 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98]">
-            <span class="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center shrink-0">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-stone-600"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </span>
-            <span class="text-[15px]">Contact</span>
-          </a>
+          <!-- Vilstay category -->
+          <div class="px-3 pt-3 pb-1">
+            <p class="text-[10px] font-bold uppercase tracking-[.18em] text-[#b1493e]">Vilstay · Resorts &amp; Leisure</p>
+          </div>
+          <a href="properties.html" class="flex items-center gap-3.5 px-3 py-2.5 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98] text-[14px]">🏨 Resorts &amp; Villas</a>
+          <a href="properties.html" class="flex items-center gap-3.5 px-3 py-2.5 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98] text-[14px]">✨ Premium Stays</a>
+          <!-- Vilstay Go category -->
+          <div class="px-3 pt-3 pb-1">
+            <p class="text-[10px] font-bold uppercase tracking-[.18em] text-[#d98c45]">Vilstay Go · Town &amp; City</p>
+          </div>
+          <a href="properties.html" class="flex items-center gap-3.5 px-3 py-2.5 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98] text-[14px]">🏙️ Town Hotels</a>
+          <a href="properties.html" class="flex items-center gap-3.5 px-3 py-2.5 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98] text-[14px]">💼 Business Stays</a>
+          <!-- Vilstay Venue category -->
+          <div class="px-3 pt-3 pb-1">
+            <p class="text-[10px] font-bold uppercase tracking-[.18em] text-[#a0522d]">Vilstay Venue · Events</p>
+          </div>
+          <a href="contact.html" class="flex items-center gap-3.5 px-3 py-2.5 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98] text-[14px]">💍 Weddings &amp; Events</a>
+          <a href="contact.html" class="flex items-center gap-3.5 px-3 py-2.5 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98] text-[14px]">🥂 Private Celebrations</a>
+          <!-- Other links -->
+          <div class="border-t border-stone-200 mt-2 pt-2">
+            <a href="about.html" class="flex items-center gap-3.5 px-3 py-3 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98]">
+              <span class="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center shrink-0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-stone-600"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              </span>
+              <span class="text-[15px]">About</span>
+            </a>
+            <a href="contact.html" class="flex items-center gap-3.5 px-3 py-3 rounded-xl text-[#2b2321] hover:bg-stone-100 font-medium transition active:scale-[0.98]">
+              <span class="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center shrink-0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-stone-600"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </span>
+              <span class="text-[15px]">Contact</span>
+            </a>
+          </div>
         </nav>
 
         <!-- CTA Buttons -->
@@ -130,35 +191,146 @@
   </header>
 
   <main id="main">
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center text-white overflow-hidden" style="min-height:100dvh">
-      <img src="https://d2gx18f76jq9dw.cloudfront.net/102717/01KXZN3YAFCHCF7YG7SQVTW7ZD.jpeg" alt="Green mountain views at Kalani Boutique Stay" class="absolute inset-0 h-full w-full object-cover" fetchpriority="high" decoding="async">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-black/65"></div>
-      <div class="relative w-full max-w-4xl mx-auto px-5 sm:px-8 pt-20 sm:pt-28 pb-10 sm:pb-16 text-center flex flex-col justify-center" style="min-height:100dvh">
+    <!-- Hero Slider -->
+    <section id="hero-slider" class="relative overflow-hidden text-white" style="height:100dvh;min-height:560px" aria-label="Vilstay brand categories">
 
-        <h1 class="text-[2rem] leading-[1.18] sm:text-5xl sm:leading-tight md:text-6xl font-bold">Discover your kind of Kerala<br class="hidden sm:block"> <span class="sm:hidden"></span>getaway.</h1>
-        <p class="text-sm sm:text-base text-white/90 mt-4 max-w-md mx-auto leading-relaxed">Beautiful places. A slower pace. A stay worth remembering.</p>
-        
-        <form action="properties.html" class="flex items-center bg-white/95 backdrop-blur-md rounded-full p-1.5 text-charcoal mt-6 sm:mt-10 shadow-2xl gap-1.5 max-w-xl mx-auto border border-white/30">
-          <span class="pl-3 text-forest shrink-0" aria-hidden="true">
-            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>
-          </span>
-          <label for="hero-query" class="sr-only">Search by destination or property name</label>
-          <input id="hero-query" type="search" name="q" placeholder="Destination or stay…" class="min-w-0 flex-1 px-2 py-2.5 sm:py-3 bg-transparent outline-none text-sm sm:text-base text-charcoal placeholder-stone-400">
-          <button class="rounded-full bg-forest text-white px-4 sm:px-7 py-2.5 sm:py-3 hover:bg-olive transition flex items-center justify-center gap-1.5 text-sm font-semibold shadow-md shrink-0" aria-label="Search stays">
-            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg>
-            <span class="hidden sm:inline">Search</span>
-          </button>
-        </form>
+      <!-- Slides -->
+      <div id="slider-track" class="absolute inset-0">
 
-        <div class="flex justify-center flex-wrap items-center gap-2 mt-4 sm:mt-5">
-          <span class="text-white/70 text-xs mr-0.5 hidden sm:inline">Find your escape:</span>
-          <a class="bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white text-xs px-3.5 py-1 rounded-full font-medium transition border border-white/20 active:scale-95" href="properties.html?where=Wayanad">Wayanad</a>
-          <a class="bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white text-xs px-3.5 py-1 rounded-full font-medium transition border border-white/20 active:scale-95" href="properties.html?where=Manjeri">Manjeri</a>
-          <a class="bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white text-xs px-3.5 py-1 rounded-full font-medium transition border border-white/20 active:scale-95" href="properties.html?where=Alappuzha">Alappuzha</a>
+        <!-- Slide 1: Vilstay -->
+        <div class="hero-slide absolute inset-0 transition-opacity duration-1000" data-slide="0" aria-hidden="false">
+          <img src="https://d2gx18f76jq9dw.cloudfront.net/102717/01KXZN3YAFCHCF7YG7SQVTW7ZD.jpeg" alt="Kalani Boutique Stay — mountain resort in Wayanad" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" decoding="async">
+          <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/70"></div>
+          <div class="slide-content absolute inset-0 flex flex-col items-center justify-center text-center px-5 sm:px-8 pt-20">
+            <span class="slide-label inline-block text-[10px] sm:text-xs font-bold uppercase tracking-[.3em] text-white/80 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 rounded-full mb-5">VILSTAY</span>
+            <h1 class="slide-heading text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.08] tracking-tight max-w-3xl">Stay Beyond<br>Ordinary.</h1>
+            <p class="slide-desc text-sm sm:text-base text-white/85 mt-5 max-w-lg leading-relaxed">Discover resorts, villas and beautiful stays designed for relaxing escapes, memorable experiences and unforgettable getaways.</p>
+            <div class="slide-ctas flex flex-wrap gap-3 mt-8 justify-center">
+              <a href="properties.html" class="inline-flex items-center gap-2 bg-white text-charcoal font-semibold px-6 py-3 rounded-full text-sm hover:bg-linen transition shadow-lg active:scale-95">Explore Vilstay <span aria-hidden="true">↗</span></a>
+              <a href="properties.html" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold px-6 py-3 rounded-full text-sm hover:bg-white/20 transition active:scale-95">View Properties</a>
+            </div>
+          </div>
         </div>
+
+        <!-- Slide 2: Vilstay Go -->
+        <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="1" aria-hidden="true">
+          <img src="https://d2gx18f76jq9dw.cloudfront.net/102713/01KXZMMSMVQRJQGSVYZTC55WDT.png" alt="Malabar Comforts — modern city stay in Alappuzha" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+          <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/75"></div>
+          <div class="slide-content absolute inset-0 flex flex-col items-center justify-center text-center px-5 sm:px-8 pt-20">
+            <span class="slide-label inline-block text-[10px] sm:text-xs font-bold uppercase tracking-[.3em] text-white/80 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 rounded-full mb-5">VILSTAY GO</span>
+            <h1 class="slide-heading text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.08] tracking-tight max-w-3xl">Stay Where Life<br>Happens.</h1>
+            <p class="slide-desc text-sm sm:text-base text-white/85 mt-5 max-w-lg leading-relaxed">Smart, comfortable stays in town and city locations — perfect for business trips, short stays and convenient travel.</p>
+            <div class="slide-ctas flex flex-wrap gap-3 mt-8 justify-center">
+              <a href="properties.html" class="inline-flex items-center gap-2 bg-gold text-white font-semibold px-6 py-3 rounded-full text-sm hover:opacity-90 transition shadow-lg active:scale-95">Explore Vilstay Go <span aria-hidden="true">↗</span></a>
+              <a href="properties.html" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold px-6 py-3 rounded-full text-sm hover:bg-white/20 transition active:scale-95">Find a Stay</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Vilstay Venue -->
+        <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="2" aria-hidden="true">
+          <img src="https://d2gx18f76jq9dw.cloudfront.net/88563/01KTZVAB61NE9DAW779G2P2AVS.png" alt="Panthalaza — intimate heritage venue for celebrations" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+          <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/75"></div>
+          <div class="slide-content absolute inset-0 flex flex-col items-center justify-center text-center px-5 sm:px-8 pt-20">
+            <span class="slide-label inline-block text-[10px] sm:text-xs font-bold uppercase tracking-[.3em] text-white/80 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 rounded-full mb-5">VILSTAY VENUE</span>
+            <h1 class="slide-heading text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.08] tracking-tight max-w-3xl">Celebrate Your<br>Moments.</h1>
+            <p class="slide-desc text-sm sm:text-base text-white/85 mt-5 max-w-lg leading-relaxed">Intimate venues for weddings, private celebrations and meaningful gatherings, created to make every occasion special.</p>
+            <div class="slide-ctas flex flex-wrap gap-3 mt-8 justify-center">
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-charcoal font-semibold px-6 py-3 rounded-full text-sm hover:bg-linen transition shadow-lg active:scale-95">Explore Venues <span aria-hidden="true">↗</span></a>
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold px-6 py-3 rounded-full text-sm hover:bg-white/20 transition active:scale-95">Plan Your Event</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /slider-track -->
+
+      <!-- Prev / Next Arrows -->
+      <button id="slider-prev" aria-label="Previous slide" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-md border border-white/20 flex items-center justify-center transition active:scale-95">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <button id="slider-next" aria-label="Next slide" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-md border border-white/20 flex items-center justify-center transition active:scale-95">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+
+      <!-- Slide Indicators -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 sm:gap-3" role="tablist" aria-label="Slide indicators">
+        <button class="slider-dot group flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/25 rounded-full px-3.5 py-1.5 transition active:scale-95" data-target="0" role="tab" aria-selected="true">
+          <span class="w-1.5 h-1.5 rounded-full bg-white dot-indicator transition-all duration-300"></span>
+          <span class="text-white text-[11px] font-semibold tracking-wide">Vilstay</span>
+        </button>
+        <button class="slider-dot group flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/15 rounded-full px-3.5 py-1.5 transition active:scale-95" data-target="1" role="tab" aria-selected="false">
+          <span class="w-1.5 h-1.5 rounded-full bg-white/50 dot-indicator transition-all duration-300"></span>
+          <span class="text-white/70 text-[11px] font-semibold tracking-wide">Vilstay Go</span>
+        </button>
+        <button class="slider-dot group flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/15 rounded-full px-3.5 py-1.5 transition active:scale-95" data-target="2" role="tab" aria-selected="false">
+          <span class="w-1.5 h-1.5 rounded-full bg-white/50 dot-indicator transition-all duration-300"></span>
+          <span class="text-white/70 text-[11px] font-semibold tracking-wide">Vilstay Venue</span>
+        </button>
+      </div>
+
+    </section>
+    <!-- /Hero Slider -->
+
+    <!-- Find Your Vilstay Section -->
+    <section id="find-your-vilstay" class="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 py-14 sm:py-20">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="text-xs font-bold uppercase tracking-[.22em] text-forest">Discover</span>
+        <h2 class="text-2xl sm:text-4xl font-bold mt-2 text-charcoal">Find Your Vilstay</h2>
+        <p class="text-stone-500 text-sm sm:text-base mt-2">Three ways to stay, travel and celebrate.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-7">
+
+        <!-- Card 1: Vilstay -->
+        <a href="properties.html" class="group relative rounded-3xl overflow-hidden aspect-[4/5] sm:aspect-auto sm:min-h-[420px] shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col justify-end block">
+          <img src="https://d2gx18f76jq9dw.cloudfront.net/102717/01KXZN3YAFCHCF7YG7SQVTW7ZD.jpeg" alt="Vilstay — Resorts &amp; Leisure" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/5"></div>
+          <div class="relative p-6 sm:p-8 text-white">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-[.25em] text-white/70 bg-white/10 border border-white/20 px-3 py-1 rounded-full mb-3">VILSTAY</span>
+            <h3 class="text-xl sm:text-2xl font-bold leading-snug">Resorts &amp; Leisure Stays</h3>
+            <p class="text-xs sm:text-sm text-white/75 mt-2 leading-relaxed">Resorts • Villas • Leisure Stays</p>
+            <p class="text-xs sm:text-sm text-white/70 mt-2 leading-relaxed">Relax, escape and experience Kerala at its most beautiful.</p>
+            <span class="inline-flex items-center gap-2 mt-5 text-sm font-semibold text-white group-hover:gap-3 transition-all">
+              Explore Vilstay
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Card 2: Vilstay Go -->
+        <a href="properties.html" class="group relative rounded-3xl overflow-hidden aspect-[4/5] sm:aspect-auto sm:min-h-[420px] shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col justify-end block">
+          <img src="https://d2gx18f76jq9dw.cloudfront.net/102713/01KXZMMSMVQRJQGSVYZTC55WDT.png" alt="Vilstay Go — Town &amp; City Hotels" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/5"></div>
+          <div class="relative p-6 sm:p-8 text-white">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-[.25em] text-white/70 bg-gold/30 border border-gold/40 px-3 py-1 rounded-full mb-3">VILSTAY GO</span>
+            <h3 class="text-xl sm:text-2xl font-bold leading-snug">Town &amp; City Hotels</h3>
+            <p class="text-xs sm:text-sm text-white/75 mt-2 leading-relaxed">Town Hotels • City Stays • Business Travel</p>
+            <p class="text-xs sm:text-sm text-white/70 mt-2 leading-relaxed">Stay where life happens — comfortable, convenient and connected.</p>
+            <span class="inline-flex items-center gap-2 mt-5 text-sm font-semibold text-white group-hover:gap-3 transition-all">
+              Explore Vilstay Go
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Card 3: Vilstay Venue -->
+        <a href="contact.html" class="group relative rounded-3xl overflow-hidden aspect-[4/5] sm:aspect-auto sm:min-h-[420px] shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col justify-end block">
+          <img src="https://d2gx18f76jq9dw.cloudfront.net/88563/01KTZVAB61NE9DAW779G2P2AVS.png" alt="Vilstay Venue — Weddings &amp; Events" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/5"></div>
+          <div class="relative p-6 sm:p-8 text-white">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-[.25em] text-white/70 bg-white/10 border border-white/20 px-3 py-1 rounded-full mb-3">VILSTAY VENUE</span>
+            <h3 class="text-xl sm:text-2xl font-bold leading-snug">Weddings &amp; Celebrations</h3>
+            <p class="text-xs sm:text-sm text-white/75 mt-2 leading-relaxed">Weddings • Events • Celebrations</p>
+            <p class="text-xs sm:text-sm text-white/70 mt-2 leading-relaxed">Memorable spaces for meaningful occasions. Celebrate your moments.</p>
+            <span class="inline-flex items-center gap-2 mt-5 text-sm font-semibold text-white group-hover:gap-3 transition-all">
+              Explore Venues
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </span>
+          </div>
+        </a>
+
       </div>
     </section>
+    <!-- /Find Your Vilstay -->
 
     <!-- Destination Shortcuts -->
     <section class="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 pt-10 sm:pt-14 pb-8 sm:pb-10">
